@@ -1,0 +1,106 @@
+✅ Full Summary: Git & GitHub Setup (Without hello.py)
+📁 Working Folder:
+bash
+Copy
+Edit
+C:\Users\Devashree_Anantharaj\OneDrive - Dell Technologies\Intern Project\GitHubPrac\my-first-git-project
+🔹 Step 1: Create a Local Git Repository
+✅ Command:
+bash
+Copy
+Edit
+git init
+🧠 Function:
+Initializes an empty Git repository in your project folder.
+
+Creates a hidden .git/ directory that tracks your files and versions.
+
+🔹 Step 2: Create Your First File
+✅ Command:
+bash
+Copy
+Edit
+echo "# My First Git Project" > README.md
+🧠 Function:
+Creates a README.md file with one line of text.
+
+Markdown file commonly used to describe the project.
+
+🔹 Step 3: Stage the File
+✅ Command:
+bash
+Copy
+Edit
+git add README.md
+🧠 Function:
+Adds the file to the staging area.
+
+Tells Git that you want to include this file in the next commit.
+
+🔹 Step 4: Commit the File
+✅ Command:
+bash
+Copy
+Edit
+git commit -m "Initial commit"
+🧠 Function:
+Saves the current state of the staged file to the Git repository.
+
+The -m flag lets you write a short commit message explaining the change.
+
+🔹 Step 5: Rename the Default Branch to main
+✅ Command:
+bash
+Copy
+Edit
+git branch -M main
+🧠 Function:
+Renames the current branch to main.
+
+The -M flag forces the rename even if the branch already exists.
+
+🔹 Step 6: Create a GitHub Repository
+🧠 Action (manual):
+Go to: https://github.com/new
+
+Name it: my-first-git-project
+
+Uncheck: “Initialize with README”
+
+Click Create Repository
+
+GitHub gives you instructions to push an existing repo — you used those next.
+
+🔹 Step 7: Connect Local to Remote
+✅ Command:
+bash
+Copy
+Edit
+git remote add origin https://github.com/devashree198624/my-first-git-project.git
+🧠 Function:
+Connects your local repository to the GitHub remote repository.
+
+origin is just a name (alias) for that remote URL.
+
+🔹 Step 8: Push Your Local Code to GitHub
+✅ Command:
+bash
+Copy
+Edit
+git push -u origin main
+🧠 Function:
+Pushes the local main branch to GitHub’s main branch.
+
+-u sets origin/main as the default upstream branch, so future pushes/pulls are easier:
+
+Later you can just use git push or git pull without specifying branch names.
+
+✅ Final Result:
+You now have:
+
+A local Git repository with your README.md
+
+A GitHub repository named my-first-git-project
+
+Code pushed and published to:
+🔗 https://github.com/devashree198624/my-first-git-project
