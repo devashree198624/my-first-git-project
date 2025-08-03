@@ -104,3 +104,69 @@ A GitHub repository named my-first-git-project
 
 Code pushed and published to:
 🔗 https://github.com/devashree198624/my-first-git-project
+
+✅ Step 3: Modify Local Files and Push Updates to GitHub
+🧩 Use Case: You want to update your project (e.g., edit README.md), commit the changes, and push the updates to GitHub.
+
+🔹 Step 3.1 – Edit a Tracked File (README.md)
+Let’s add more information to the README.md:
+
+✅ Command (append text):
+bash
+Copy
+Edit
+echo "This project is for practicing Git and GitHub operations step-by-step." >> README.md
+🧠 Function:
+Adds a new line to the end of your README.md.
+
+📌 You can also open and edit the file manually in Notepad or VS Code if you prefer.
+
+🔹 Step 3.2 – Check What’s Changed
+✅ Command:
+bash
+Copy
+Edit
+git status
+🧠 Output (example):
+yaml
+Copy
+Edit
+On branch main
+Changes not staged for commit:
+  modified:   README.md
+This shows that README.md has changed but is not yet staged.
+
+🔹 Step 3.3 – Stage the Changes
+✅ Command:
+bash
+Copy
+Edit
+git add README.md
+🧠 Function:
+Tells Git: “I want to include this file in my next commit.”
+
+🔹 Step 3.4 – Commit the Changes
+✅ Command:
+bash
+Copy
+Edit
+git commit -m "Updated README with project description"
+🧠 Function:
+Saves a snapshot of your staged changes to the repository with a meaningful message.
+
+🔹 Step 3.5 – Push the Commit to GitHub
+✅ Command:
+bash
+Copy
+Edit
+git push
+🧠 Function:
+Since you already ran git push -u origin main earlier, now git push alone is enough.
+
+Pushes your new commit to GitHub.
+
+✅ Done!
+Check your repository again:
+🔗 https://github.com/devashree198624/my-first-git-project
+
+You’ll see the updated README with your new content.
