@@ -170,3 +170,77 @@ Check your repository again:
 🔗 https://github.com/devashree198624/my-first-git-project
 
 You’ll see the updated README with your new content.
+
+✅ Step 4: Create and Use Git Branches
+🧩 Use Case: You want to work on a new feature or fix without affecting your main code. This is where branches come in.
+
+🧠 Why Use Branches?
+Safe testing space for new code
+
+Allows multiple developers to work on different features at the same time
+
+Keeps main or master stable
+
+🔹 Step 4.1 – Create a New Branch
+✅ Command:
+bash
+Copy
+Edit
+git checkout -b feature-update-readme
+🧠 Function:
+checkout -b creates and switches to a new branch called feature-update-readme.
+
+🔹 Step 4.2 – Make Changes in This Branch
+Let’s add a note to README.md:
+
+bash
+Copy
+Edit
+echo "Note: This branch is created for updating the README." >> README.md
+Then check the change:
+
+bash
+Copy
+Edit
+git status
+🔹 Step 4.3 – Commit Your Changes
+bash
+Copy
+Edit
+git add README.md
+git commit -m "Added a note to README in feature-update-readme branch"
+🔹 Step 4.4 – Push the Branch to GitHub
+bash
+Copy
+Edit
+git push -u origin feature-update-readme
+🧠 What this does:
+Pushes the new branch to GitHub
+
+-u sets upstream tracking so you can use just git push next time
+
+✅ Now Go to GitHub
+Visit your repo:
+🔗 https://github.com/devashree198624/my-first-git-project/branches
+
+You’ll see your feature-update-readme branch live.
+
+🧩 Optional Step – Open a Pull Request
+On GitHub, click Compare & pull request
+
+Add a comment and click Create pull request
+
+You (or a reviewer) can then merge it into main from the GitHub interface
+
+🔁 Summary So Far
+You’ve now learned to:
+
+✅ Create a branch
+
+✅ Switch to it
+
+✅ Make changes
+
+✅ Commit and push that branch to GitHub
+
+✅ (Optionally) create a pull request
